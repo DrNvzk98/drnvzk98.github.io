@@ -3,74 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Audria Neviezka S.S.</title>
+    <title>Audria Neviezka | Edutech & Creative Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .gradient-text { background: linear-gradient(90deg, #3b82f6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .skill-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.3s ease; }
-        .skill-card:hover { background: rgba(255, 255, 255, 0.1); border-color: #ec4899; transform: translateY(-5px); }
+        .gradient-text { background: linear-gradient(90deg, #D4A373, #A98467); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .skill-bar { transition: width 1.5s ease-in-out; }
     </style>
 </head>
-<body class="bg-black text-white overflow-x-hidden">
+<body class="bg-[#0b0b0b] text-white overflow-x-hidden">
 
     <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-tighter italic">AN<span class="text-pink-500">SS.</span></h1>
+            <h1 class="text-xl font-bold tracking-tighter">AUDRIA<span class="text-[#D4A373]">.</span></h1>
             <div class="space-x-6 text-sm uppercase tracking-widest hidden md:block">
-                <a href="#home" class="hover:text-pink-500 transition">Beranda</a>
-                <a href="#about" class="hover:text-pink-500 transition">Profil</a>
-                <a href="#portfolio" class="hover:text-pink-500 transition">Karya</a>
-                <a href="#contact" class="hover:text-pink-500 transition">Kontak</a>
+                <a href="#home" class="hover:text-[#D4A373] transition">Home</a>
+                <a href="#about" class="hover:text-[#D4A373] transition">About & Skills</a>
+                <a href="#portfolio" class="hover:text-[#D4A373] transition">Works</a>
+                <a href="#contact" class="hover:text-[#D4A373] transition">Contact</a>
             </div>
         </div>
     </nav>
 
     <section id="home" class="h-screen flex items-center justify-center text-center px-4">
         <div data-aos="fade-up" data-aos-duration="1000">
-            <h2 class="text-5xl md:text-8xl font-bold mb-4">Edutech & <span class="gradient-text">Creative.</span></h2>
-            <p class="text-gray-400 max-w-2xl mx-auto text-lg italic">
-                S2 Pendidikan Bahasa Arab | Specialist Database Sekolah | Digital Designer
+            <span class="text-[#D4A373] uppercase tracking-[0.3em] text-sm font-bold">Edutech Specialist & Designer</span>
+            <h2 class="text-5xl md:text-8xl font-bold mb-4 mt-2">Audria <span class="gradient-text">Neviezka.</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+                M.Pd. Pendidikan Bahasa Arab & Praktisi Teknologi Pendidikan. 
+                Menjembatani estetika visual dengan efisiensi data.
             </p>
-            <div class="mt-8">
-                <a href="#about" class="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-pink-500 hover:text-white transition">Kenali Saya</a>
-            </div>
         </div>
     </section>
 
-    <section id="about" class="py-20 bg-zinc-950">
+    <section id="about" class="py-24 bg-[#111111]">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div data-aos="fade-right">
-                    <h3 class="text-3xl font-bold mb-6 border-l-4 border-blue-500 pl-4">Tentang Saya</h3>
-                    <p class="text-gray-400 leading-relaxed mb-4">
-                        Saya adalah <strong>Audria Neviezka Sarasti Syafrodin</strong>, seorang pendidik yang menggabungkan kepakaran linguistik Bahasa Arab (S2 UNIDA Gontor) dengan efisiensi teknologi modern.
-                    </p>
-                    <p class="text-gray-400 leading-relaxed">
-                        Fokus utama saya saat ini adalah mengembangkan ekosistem digital di lingkungan sekolah—mulai dari sistem ujian CBT, manajemen database kurikulum yang efektif, hingga branding visual sekolah. Saya percaya data yang rapi dan desain yang menarik adalah fondasi pendidikan masa depan.
-                    </p>
+                <div class="relative" data-aos="fade-right">
+                    <div class="absolute -inset-4 border-2 border-[#D4A373] rounded-2xl"></div>
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Audria Neviezka" class="relative rounded-2xl w-full h-[500px] object-cover shadow-2xl grayscale hover:grayscale-0 transition duration-700">
                 </div>
-                
+
                 <div data-aos="fade-left">
-                    <h3 class="text-3xl font-bold mb-8 text-center">Core Capabilities</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="skill-card p-4 rounded-xl text-center">
-                            <h4 class="text-pink-500 font-bold">Data Specialist</h4>
-                            <p class="text-xs text-gray-400">Google Sheets, Database, Excel</p>
+                    <h3 class="text-3xl font-bold mb-6 italic underline decoration-[#D4A373]">The Master of Data & Design</h3>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Lulusan S2 Pendidikan Bahasa Arab UNIDA Gontor yang mendedikasikan diri pada pengembangan teknologi sekolah. Dari membangun sistem CBT hingga animasi Videotron, saya memastikan setiap data terkelola dengan cepat dan setiap visual tersampaikan dengan makna.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-bold">Data Management (Spreadsheet/CBT)</span>
+                                <span class="text-sm text-[#D4A373]">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-[#D4A373] h-full rounded-full" style="width: 95%"></div>
+                            </div>
                         </div>
-                        <div class="skill-card p-4 rounded-xl text-center">
-                            <h4 class="text-blue-500 font-bold">Graphic Design</h4>
-                            <p class="text-xs text-gray-400">Illustrator, Canva, Pixellab</p>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-bold">Graphic Design (Ai/Ps/Canva)</span>
+                                <span class="text-sm text-[#D4A373]">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-[#A98467] h-full rounded-full" style="width: 90%"></div>
+                            </div>
                         </div>
-                        <div class="skill-card p-4 rounded-xl text-center">
-                            <h4 class="text-purple-500 font-bold">3D & Motion</h4>
-                            <p class="text-xs text-gray-400">SketchUp & Videotron Animation</p>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-bold">3D Modeling (SketchUp)</span>
+                                <span class="text-sm text-[#D4A373]">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-[#665345] h-full rounded-full" style="width: 85%"></div>
+                            </div>
                         </div>
-                        <div class="skill-card p-4 rounded-xl text-center">
-                            <h4 class="text-green-500 font-bold">Edutech</h4>
-                            <p class="text-xs text-gray-400">CBT System & Web School Management</p>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-bold">Arabic Education & Content</span>
+                                <span class="text-sm text-[#D4A373]">98%</span>
+                            </div>
+                            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-[#D4A373] h-full rounded-full" style="width: 98%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,55 +95,57 @@
         </div>
     </section>
 
-    <section id="portfolio" class="py-20 container mx-auto px-4">
-        <h3 class="text-3xl font-bold mb-12 border-l-4 border-pink-500 pl-4" data-aos="fade-right">Karya Terpilih</h3>
+    <section id="portfolio" class="py-24 container mx-auto px-4">
+        <div class="flex justify-between items-end mb-16" data-aos="fade-up">
+            <div>
+                <h3 class="text-4xl font-bold">Karya <span class="text-[#D4A373]">Pilihan.</span></h3>
+                <p class="text-gray-500 mt-2 text-lg">Eksplorasi dari sistem data hingga visual kreatif.</p>
+            </div>
+        </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="group relative overflow-hidden rounded-2xl bg-gray-900 border border-white/5" data-aos="zoom-in">
-                <div class="w-full h-80 flex items-center justify-center bg-blue-900/20 group-hover:bg-blue-900/40 transition">
-                    <span class="text-6xl">📊</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group relative bg-[#1a1a1a] rounded-3xl p-6 border border-white/5 hover:border-[#D4A373]/50 transition duration-500" data-aos="zoom-in">
+                <div class="h-48 bg-gradient-to-br from-gray-800 to-black rounded-xl mb-6 flex items-center justify-center overflow-hidden">
+                   <p class="text-[#D4A373] font-mono text-xs p-4">[ Automated School Database System Showcase ]</p>
                 </div>
-                <div class="absolute bottom-0 p-6 bg-gradient-to-t from-black w-full">
-                    <span class="text-[10px] bg-blue-600 px-2 py-1 rounded">DATA ARCHITECT</span>
-                    <h4 class="text-xl font-bold mt-2">Sistem Database & CBT Sekolah</h4>
-                    <p class="text-xs text-gray-400 mt-1">Otomasi data kurikulum & ujian digital.</p>
-                </div>
+                <span class="text-[10px] bg-white/10 px-3 py-1 rounded-full uppercase tracking-widest">Database & CBT</span>
+                <h4 class="text-xl font-bold mt-4">Sistem Ujian Terintegrasi</h4>
+                <p class="text-sm text-gray-500 mt-2">Otomasi rekap data nilai dan pengelolaan sistem ujian berbasis web.</p>
             </div>
 
-            <div class="group relative overflow-hidden rounded-2xl bg-gray-900" data-aos="zoom-in" data-aos-delay="100">
-                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766" alt="Design" class="w-full h-80 object-cover opacity-60 group-hover:scale-110 group-hover:opacity-100 transition duration-500">
-                <div class="absolute bottom-0 p-6 bg-gradient-to-t from-black w-full">
-                    <span class="text-[10px] bg-pink-600 px-2 py-1 rounded">CREATIVE DESIGN</span>
-                    <h4 class="text-xl font-bold mt-2">Branding & Publication</h4>
-                    <p class="text-xs text-gray-400 mt-1">Flyer, Banner, & Desain Buku.</p>
-                </div>
+            <div class="group relative bg-[#1a1a1a] rounded-3xl p-6 border border-white/5 hover:border-[#D4A373]/50 transition duration-500" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766" alt="Design" class="w-full h-48 object-cover rounded-xl mb-6 opacity-80 group-hover:opacity-100 transition">
+                <span class="text-[10px] bg-white/10 px-3 py-1 rounded-full uppercase tracking-widest">Creative Design</span>
+                <h4 class="text-xl font-bold mt-4">Visual Branding Sekolah</h4>
+                <p class="text-sm text-gray-500 mt-2">Desain banner, backdrop, dan identitas visual kegiatan pendidikan.</p>
             </div>
 
-            <div class="group relative overflow-hidden rounded-2xl bg-gray-900" data-aos="zoom-in" data-aos-delay="200">
-                <div class="w-full h-80 flex items-center justify-center bg-purple-900/20">
-                     <span class="text-6xl">🎬</span>
+            <div class="group relative bg-[#1a1a1a] rounded-3xl p-6 border border-white/5 hover:border-[#D4A373]/50 transition duration-500" data-aos="zoom-in" data-aos-delay="200">
+                <div class="h-48 bg-gray-800 rounded-xl mb-6 flex items-center justify-center italic text-gray-500">
+                   [ Link Video / Animasi Videotron ]
                 </div>
-                <div class="absolute bottom-0 p-6 bg-gradient-to-t from-black w-full">
-                    <span class="text-[10px] bg-purple-600 px-2 py-1 rounded">3D & MOTION</span>
-                    <h4 class="text-xl font-bold mt-2">Motion Video & SketchUp</h4>
-                    <p class="text-xs text-gray-400 mt-1">Visualisasi 3D & Animasi Videotron.</p>
-                </div>
+                <span class="text-[10px] bg-white/10 px-3 py-1 rounded-full uppercase tracking-widest">Motion & 3D</span>
+                <h4 class="text-xl font-bold mt-4">Animasi Videotron & SketchUp</h4>
+                <p class="text-sm text-gray-500 mt-2">Pemodelan 3D arsitektur sekolah dan aset gerak untuk media luar ruang.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-zinc-950">
+    <section id="contact" class="py-32 bg-[#0b0b0b] relative border-t border-white/5">
         <div class="container mx-auto px-4 text-center">
-            <h3 class="text-4xl font-bold mb-6" data-aos="fade-up">Mari Berkolaborasi.</h3>
-            <p class="text-gray-400 mb-8 max-w-md mx-auto" data-aos="fade-up" data-aos-delay="100">
-                Tersedia untuk proyek manajemen data, desain kurikulum, dan multimedia secara remote.
+            <h3 class="text-5xl font-bold mb-8" data-aos="fade-up">Siap Memulai Proyek Efisien?</h3>
+            <p class="text-gray-400 mb-12 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Hubungi saya untuk konsultasi manajemen data sekolah atau kebutuhan desain kreatif Anda.
             </p>
-            <a href="mailto:audria@example.com" class="text-2xl font-bold text-pink-500 hover:underline transition-all" data-aos="fade-up" data-aos-delay="200">Kirim Email</a>
+            <div class="flex flex-col md:flex-row justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
+                <a href="mailto:audria.neviezka@email.com" class="bg-[#D4A373] text-black px-10 py-4 rounded-full font-bold hover:scale-105 transition shadow-xl shadow-[#D4A373]/20">Email Me</a>
+                <a href="https://linkedin.com/in/audria-neviezka" class="bg-white/5 border border-white/10 text-white px-10 py-4 rounded-full font-bold hover:bg-white/10 transition">LinkedIn</a>
+            </div>
         </div>
     </section>
 
-    <footer class="p-10 text-center text-gray-600 border-t border-white/5 text-sm">
-        &copy; 2026 Audria Neviezka. Built with Passion & GitHub Pages.
+    <footer class="py-12 text-center text-gray-700 text-xs tracking-widest uppercase">
+        &copy; 2026 Audria Neviezka Sarasti Syafrodin. All Rights Reserved.
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
