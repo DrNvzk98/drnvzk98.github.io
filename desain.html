@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,74 +22,86 @@
 </head>
 <body class="text-gray-200">
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 py-6 px-10 flex justify-between items-center bg-black/80 backdrop-blur-lg border-b border-white/5">
-        <a href="index.html" class="text-sm font-bold tracking-[0.5em] text-white flex items-center">
+        <a href="index.html" class="text-sm font-bold tracking-[0.5em] text-white flex items-center hover:text-[#E29578] transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             BACK TO HOME
         </a>
-        <div class="text-sm font-bold tracking-[0.5em] text-white hidden md:block">DESIGN<span class="text-[#E29578]">.</span>GALLERY</div>
+        <div class="text-sm font-bold tracking-[0.5em] text-white hidden md:block uppercase">DESIGN<span class="text-[#E29578]">.</span>GALLERY</div>
     </nav>
 
+    <!-- Header Section -->
     <header class="pt-40 pb-20 px-6 text-center">
         <div data-aos="fade-down">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4">Graphic <span class="text-gradient">Design.</span></h1>
-            <p class="text-gray-500 max-w-xl mx-auto">Kumpulan karya visual mulai dari branding sekolah, desain layout buku, hingga pemodelan 3D SketchUp.</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 uppercase tracking-tighter">Visual <span class="text-gradient">Identity.</span></h1>
+            <p class="text-gray-500 max-w-xl mx-auto leading-relaxed">
+                A curated collection of visual works ranging from institutional branding, 
+                educational layout design, to high-precision 3D architectural modeling.
+            </p>
         </div>
     </header>
 
+    <!-- Project Grid -->
     <section class="pb-32 px-6 container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
+            <!-- Project 1 -->
             <div class="group" data-aos="fade-up">
                 <div class="overflow-hidden rounded-2xl bg-zinc-900 border border-white/5 aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-80 group-hover:opacity-100">
                 </div>
                 <div class="mt-4">
-                    <h4 class="font-bold text-white">Event Poster Series</h4>
-                    <p class="text-xs text-[#E29578] uppercase tracking-widest mt-1 font-semibold">Branding & Print</p>
+                    <h4 class="font-bold text-white text-lg">Event Poster Series</h4>
+                    <p class="text-[10px] text-[#E29578] uppercase tracking-[0.2em] mt-1 font-bold">Branding & Print Media</p>
                 </div>
             </div>
 
+            <!-- Project 2 -->
             <div class="group" data-aos="fade-up" data-aos-delay="100">
                 <div class="overflow-hidden rounded-2xl bg-zinc-900 border border-white/5 aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1887&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1887&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-80 group-hover:opacity-100">
                 </div>
                 <div class="mt-4">
-                    <h4 class="font-bold text-white">Arabic Textbook Layout</h4>
-                    <p class="text-xs text-[#E29578] uppercase tracking-widest mt-1 font-semibold">Editorial Design</p>
+                    <h4 class="font-bold text-white text-lg">Arabic Textbook Layout</h4>
+                    <p class="text-[10px] text-[#E29578] uppercase tracking-[0.2em] mt-1 font-bold">Editorial & Publication</p>
                 </div>
             </div>
 
+            <!-- Project 3 -->
             <div class="group" data-aos="fade-up" data-aos-delay="200">
                 <div class="overflow-hidden rounded-2xl bg-zinc-900 border border-white/5 aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1503387762-592dea58292b?q=80&w=1931&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <img src="https://images.unsplash.com/photo-1503387762-592dea58292b?q=80&w=1931&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-80 group-hover:opacity-100">
                 </div>
                 <div class="mt-4">
-                    <h4 class="font-bold text-white">School Hall 3D Model</h4>
-                    <p class="text-xs text-[#E29578] uppercase tracking-widest mt-1 font-semibold">SketchUp Modeling</p>
+                    <h4 class="font-bold text-white text-lg">Institutional 3D Model</h4>
+                    <p class="text-[10px] text-[#E29578] uppercase tracking-[0.2em] mt-1 font-bold">SketchUp Architectural Rendering</p>
                 </div>
             </div>
 
+            <!-- Project 4 -->
             <div class="group" data-aos="fade-up">
                 <div class="overflow-hidden rounded-2xl bg-zinc-900 border border-white/5 aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1623282033815-40b05d96c903?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <img src="https://images.unsplash.com/photo-1623282033815-40b05d96c903?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-80 group-hover:opacity-100">
                 </div>
                 <div class="mt-4">
-                    <h4 class="font-bold text-white">Social Media Campaign</h4>
-                    <p class="text-xs text-[#E29578] uppercase tracking-widest mt-1 font-semibold">Digital Marketing</p>
+                    <h4 class="font-bold text-white text-lg">Social Media Strategy</h4>
+                    <p class="text-[10px] text-[#E29578] uppercase tracking-[0.2em] mt-1 font-bold">Digital Campaign Design</p>
                 </div>
             </div>
 
-            <div class="border-2 border-dashed border-zinc-800 rounded-2xl flex items-center justify-center text-zinc-700 italic text-sm p-10 text-center" data-aos="fade-up" data-aos-delay="100">
-                Project selanjutnya sedang dalam proses pengerjaan...
+            <!-- Placeholder Card -->
+            <div class="border-2 border-dashed border-zinc-900 rounded-2xl flex items-center justify-center text-zinc-600 italic text-sm p-10 text-center" data-aos="fade-up" data-aos-delay="100">
+                Next project currently in development...
             </div>
 
         </div>
     </section>
 
-    <footer class="py-10 border-t border-white/5 text-center text-[10px] text-gray-600 tracking-widest">
+    <!-- Footer -->
+    <footer class="py-10 border-t border-white/5 text-center text-[10px] text-gray-700 tracking-[0.3em] uppercase">
         &copy; 2026 AUDRIA NEVIEZKA | GRAPHIC DESIGN CATEGORY
     </footer>
 
