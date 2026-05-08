@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,8 +32,9 @@
 </head>
 <body class="text-gray-200">
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 py-6 px-10 flex justify-between items-center bg-black/80 backdrop-blur-lg border-b border-white/5">
-        <a href="index.html" class="text-sm font-bold tracking-[0.5em] text-white flex items-center">
+        <a href="index.html" class="text-sm font-bold tracking-[0.5em] text-white flex items-center hover:text-[#E29578] transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
@@ -42,69 +43,78 @@
         <div class="text-sm font-bold tracking-[0.5em] text-white hidden md:block">MOTION<span class="text-[#E29578]">.</span>REEL</div>
     </nav>
 
+    <!-- Header Section -->
     <header class="pt-40 pb-16 px-6 text-center">
         <div data-aos="fade-down">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4">Motion & <span class="text-gradient">Video.</span></h1>
-            <p class="text-gray-500 max-w-xl mx-auto">Dari sinematografi hingga animasi videotron. Fokus pada penceritaan visual yang dinamis dan berdampak.</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 uppercase tracking-tighter">Motion & <span class="text-gradient">Video.</span></h1>
+            <p class="text-gray-500 max-w-xl mx-auto leading-relaxed">
+                From cinematic storytelling to digital signage animation. 
+                Focused on dynamic visual narratives that leave a lasting impact.
+            </p>
         </div>
     </header>
 
+    <!-- Featured Video Section -->
     <section class="pb-20 px-6 container mx-auto">
-        <div class="group relative overflow-hidden rounded-3xl bg-zinc-900 border border-white/10" data-aos="zoom-in">
+        <div class="group relative overflow-hidden rounded-3xl bg-zinc-900 border border-white/10 shadow-2xl" data-aos="zoom-in">
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
             <div class="p-8">
-                <div class="flex justify-between items-center">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                     <div>
                         <h3 class="text-2xl font-bold text-white">Cinematic Graduation Reel</h3>
-                        <p class="text-gray-500 text-sm mt-1">Dokumentasi & Editing sinematik acara wisuda sekolah.</p>
+                        <p class="text-gray-500 text-sm mt-1">High-end cinematography & post-production for institutional commencement ceremonies.</p>
                     </div>
-                    <span class="bg-[#E29578] text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Featured</span>
+                    <span class="bg-[#E29578] text-black text-[10px] font-extrabold px-4 py-1.5 rounded-full uppercase tracking-widest">Featured Work</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Asset Grid Section -->
     <section class="py-20 px-6 container mx-auto">
-        <h3 class="text-xs tracking-[0.4em] uppercase font-bold text-gray-500 mb-12">Videotron & Social Media Assets</h3>
+        <h3 class="text-xs tracking-[0.4em] uppercase font-bold text-gray-600 mb-12">Digital Signage & Social Media Assets</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             
-            <div class="space-y-4" data-aos="fade-up">
-                <div class="rounded-2xl overflow-hidden bg-zinc-900 aspect-square border border-white/5 relative group">
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070" class="w-full h-full object-cover opacity-50 group-hover:opacity-80 transition duration-500">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                         <div class="w-16 h-16 bg-[#E29578]/20 rounded-full flex items-center justify-center border border-[#E29578]">
+            <!-- Videotron Asset -->
+            <div class="space-y-6" data-aos="fade-up">
+                <div class="rounded-2xl overflow-hidden bg-zinc-900 aspect-video border border-white/5 relative group">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070" class="w-full h-full object-cover opacity-40 group-hover:opacity-70 transition duration-700">
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                         <div class="w-16 h-16 bg-[#E29578]/10 rounded-full flex items-center justify-center border border-[#E29578]/50 group-hover:scale-110 transition duration-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#E29578]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                          </div>
                     </div>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold text-white">Animasi Digital Signage</h4>
-                    <p class="text-sm text-gray-500 mt-1">Motion graphics khusus untuk layar Videotron luar ruang.</p>
+                    <h4 class="text-xl font-bold text-white">Outdoor Digital Signage</h4>
+                    <p class="text-sm text-gray-500 mt-2 leading-relaxed">Engaging motion graphics tailored for large-scale outdoor Videotron displays.</p>
                 </div>
             </div>
 
-            <div class="space-y-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="rounded-2xl overflow-hidden bg-zinc-900 aspect-square border border-white/5 relative group">
-                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070" class="w-full h-full object-cover opacity-50 group-hover:opacity-80 transition duration-500">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                         <div class="w-16 h-16 bg-[#E29578]/20 rounded-full flex items-center justify-center border border-[#E29578]">
+            <!-- Social Media Asset -->
+            <div class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="rounded-2xl overflow-hidden bg-zinc-900 aspect-video border border-white/5 relative group">
+                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070" class="w-full h-full object-cover opacity-40 group-hover:opacity-70 transition duration-700">
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                         <div class="w-16 h-16 bg-[#E29578]/10 rounded-full flex items-center justify-center border border-[#E29578]/50 group-hover:scale-110 transition duration-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#E29578]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                          </div>
                     </div>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold text-white">Social Media Content</h4>
-                    <p class="text-sm text-gray-500 mt-1">Editing video pendek (CapCut) untuk Instagram & TikTok Sekolah.</p>
+                    <h4 class="text-xl font-bold text-white">Social Media Vertical Content</h4>
+                    <p class="text-sm text-gray-500 mt-2 leading-relaxed">Dynamic short-form video editing for Instagram Reels & TikTok campaigns.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <footer class="py-16 text-center border-t border-white/5 text-[10px] text-gray-700 tracking-widest uppercase">
-        &copy; 2026 AUDRIA NEVIEZKA | VIDEOGRAPHY PORTFOLIO
+    <!-- Footer -->
+    <footer class="py-16 text-center border-t border-white/5 text-[10px] text-gray-700 tracking-[0.4em] uppercase">
+        &copy; 2026 AUDRIA NEVIEZKA | MOTION & VIDEO CATEGORY
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -113,4 +123,3 @@
     </script>
 </body>
 </html>
-
