@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,87 +27,96 @@
 </head>
 <body class="text-gray-200">
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 py-6 px-10 flex justify-between items-center bg-black/80 backdrop-blur-lg border-b border-white/5">
-        <a href="index.html" class="text-sm font-bold tracking-[0.5em] text-white flex items-center">
+        <a href="index.html" class="text-sm font-bold tracking-[0.5em] text-white flex items-center hover:text-[#E29578] transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             BACK TO HOME
         </a>
-        <div class="text-sm font-bold tracking-[0.5em] text-white hidden md:block">DATA<span class="text-[#E29578]">.</span>SYSTEMS</div>
+        <div class="text-sm font-bold tracking-[0.5em] text-white hidden md:block uppercase">DATA<span class="text-[#E29578]">.</span>SYSTEMS</div>
     </nav>
 
+    <!-- Header -->
     <header class="pt-40 pb-16 px-6 text-center">
         <div data-aos="fade-down">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4">Data & <span class="text-gradient">Efficiency.</span></h1>
-            <p class="text-gray-500 max-w-xl mx-auto italic">"Turning messy data into accessible insights."</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 uppercase tracking-tighter">Data & <span class="text-gradient">Efficiency.</span></h1>
+            <p class="text-gray-500 max-w-xl mx-auto italic font-light">"Turning complex datasets into accessible digital insights."</p>
         </div>
     </header>
 
+    <!-- Case Study Section -->
     <section class="pb-20 px-6 container mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center card-data p-8 md:p-12 rounded-[2rem]" data-aos="fade-up">
             <div>
-                <span class="text-[#E29578] text-[10px] font-bold tracking-[0.3em] uppercase">Featured Case Study</span>
-                <h3 class="text-3xl font-bold text-white mt-4 mb-6">Automated School Management System</h3>
-                <p class="text-gray-400 mb-6 leading-relaxed">
-                    Membangun arsitektur database sekolah yang mengintegrasikan kurikulum, absensi, dan penilaian dalam satu ekosistem Google Sheets yang otomatis.
+                <span class="text-[#E29578] text-[10px] font-bold tracking-[0.4em] uppercase">Featured Case Study</span>
+                <h3 class="text-3xl font-bold text-white mt-4 mb-6 leading-tight">Automated School Management Ecosystem</h3>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    Designed and implemented a scalable school database architecture that synchronizes curriculum, attendance, and grading into a single automated Google Sheets ecosystem.
                 </p>
                 <ul class="space-y-4 text-sm text-gray-300">
-                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-[#E29578] rounded-full mr-3"></span> Otomasi rekapitulasi nilai dengan QUERY & VLOOKUP</li>
-                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-[#E29578] rounded-full mr-3"></span> Dashboard visual untuk monitoring performa siswa</li>
-                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-[#E29578] rounded-full mr-3"></span> Pengurangan waktu input manual sebesar 70%</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-[#E29578] rounded-full mr-3"></span> Automated grade processing via QUERY & VLOOKUP functions</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-[#E29578] rounded-full mr-3"></span> Interactive visual dashboards for student performance monitoring</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-[#E29578] rounded-full mr-3"></span> 70% reduction in manual administrative data entry time</li>
                 </ul>
             </div>
-            <div class="rounded-2xl overflow-hidden border border-white/10">
-                <img src="https://images.unsplash.com/photo-1551288049-bbbda546697c?q=80&w=2070" alt="Data Dashboard" class="w-full h-full object-cover opacity-80">
+            <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1551288049-bbbda546697c?q=80&w=2070" alt="Data Dashboard Illustration" class="w-full h-full object-cover opacity-60">
             </div>
         </div>
     </section>
 
+    <!-- Services Grid -->
     <section class="py-20 px-6 container mx-auto">
-        <h3 class="text-xs tracking-[0.4em] uppercase font-bold text-gray-500 mb-12 text-center">Apa yang Bisa Saya Bantu?</h3>
+        <h3 class="text-xs tracking-[0.4em] uppercase font-bold text-gray-600 mb-12 text-center">Core Competencies</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             
-            <div class="card-data p-8 rounded-3xl" data-aos="fade-up">
-                <div class="w-10 h-10 bg-[#E29578]/10 flex items-center justify-center rounded-lg mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#E29578]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <!-- Service 1 -->
+            <div class="card-data p-10 rounded-3xl group" data-aos="fade-up">
+                <div class="w-12 h-12 bg-[#E29578]/10 flex items-center justify-center rounded-xl mb-8 group-hover:bg-[#E29578] transition duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#E29578] group-hover:text-black transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                 </div>
                 <h4 class="text-xl font-bold text-white mb-4">Spreadsheet Automation</h4>
-                <p class="text-gray-500 text-sm">Otomasi laporan keuangan, stok barang, atau administrasi sekolah menggunakan formula tingkat lanjut.</p>
+                <p class="text-gray-500 text-sm leading-relaxed">Developing advanced workflows for financial reports, inventory, or school administration using complex logic and formulas.</p>
             </div>
 
-            <div class="card-data p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-10 h-10 bg-[#E29578]/10 flex items-center justify-center rounded-lg mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#E29578]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <!-- Service 2 -->
+            <div class="card-data p-10 rounded-3xl group" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-12 h-12 bg-[#E29578]/10 flex items-center justify-center rounded-xl mb-8 group-hover:bg-[#E29578] transition duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#E29578] group-hover:text-black transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 012-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                     </svg>
                 </div>
-                <h4 class="text-xl font-bold text-white mb-4">Database Cleaning</h4>
-                <p class="text-gray-500 text-sm">Merapikan data yang berantakan menjadi terstruktur, valid, dan siap digunakan untuk analisis.</p>
+                <h4 class="text-xl font-bold text-white mb-4">Database Optimization</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Cleaning and restructuring fragmented data into valid, organized datasets ready for high-level business analysis.</p>
             </div>
 
-            <div class="card-data p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-10 h-10 bg-[#E29578]/10 flex items-center justify-center rounded-lg mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#E29578]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <!-- Service 3 -->
+            <div class="card-data p-10 rounded-3xl group" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-12 h-12 bg-[#E29578]/10 flex items-center justify-center rounded-xl mb-8 group-hover:bg-[#E29578] transition duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#E29578] group-hover:text-black transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                 </div>
-                <h4 class="text-xl font-bold text-white mb-4">CBT System Admin</h4>
-                <p class="text-gray-500 text-sm">Pengelolaan sistem ujian online (Computer Based Test) dari sisi teknis dan manajemen database soal.</p>
+                <h4 class="text-xl font-bold text-white mb-4">CBT System Administration</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Full technical management of Computer Based Test (CBT) systems, from database deployment to exam result synchronization.</p>
             </div>
 
         </div>
     </section>
 
+    <!-- Call to Action -->
     <section class="py-20 text-center">
-        <h3 class="text-2xl font-bold text-white mb-8">Butuh Solusi Manajemen Data?</h3>
-        <a href="mailto:emailanda@gmail.com" class="px-10 py-4 bg-white text-black rounded-full font-bold text-sm hover:bg-[#E29578] hover:text-white transition-all">Hubungi Saya Sekarang</a>
+        <h3 class="text-2xl font-bold text-white mb-8">Need a Data Management Solution?</h3>
+        <a href="mailto:drnvzkbos@gmail.com" class="px-10 py-4 bg-white text-black rounded-full font-bold text-sm hover:bg-[#E29578] hover:text-white transition-all duration-300">Inquire Now</a>
     </section>
 
-    <footer class="py-12 text-center text-[10px] text-gray-700 tracking-widest uppercase">
-        &copy; 2026 AUDRIA NEVIEZKA | DATA SPECIALIST PORTFOLIO
+    <!-- Footer -->
+    <footer class="py-12 text-center text-[10px] text-gray-700 tracking-[0.4em] uppercase border-t border-white/5">
+        &copy; 2026 AUDRIA NEVIEZKA | DATA SPECIALIST CATEGORY
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -116,4 +125,3 @@
     </script>
 </body>
 </html>
-
